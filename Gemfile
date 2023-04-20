@@ -1,11 +1,14 @@
-# frozen_string_literal: true
-
 source "https://rubygems.org"
 
-gemspec
+# When you want to use a different Jekyll version, change it below, save the
+# file and run `bundle install`. Run Jekyll with `bundle exec`, like so:
+#
+#     bundle exec jekyll serve
+gem "jekyll", "~> 4.0.0"
 
-group :test do
-  gem "html-proofer", "~> 3.18"
+# Plugins
+group :jekyll_plugins do
+  gem "jekyll-feed", "~> 0.12"
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
